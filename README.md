@@ -3,59 +3,41 @@ A Java-based web application designed to monitor elephant movements, predict pot
 
 ✨ Features
 🌍 Live Tracking Dashboard
-
 Real-time elephant positions using Google Maps API
-
 Interactive risk heatmaps and zone highlighting
 
 🚨 Alerts Management
-
 Real-time alerts panel with search, sort, and filter by risk level
-
 Connected to a MySQL backend for live updates
 
 🛡️ Safe Route Planning
-
 Implements Dijkstra’s Algorithm to generate safest and shortest paths
-
 Supports alternative evacuation routes and nearest safe zone identification
 
 📊 Analytics & Reporting
 
 Daily/monthly charts for alerts and zone-based statistics
-
 Exportable reports in PDF format using Apache PDFBox
 
 🐘 Elephant Profiles
 
 Detailed elephant information, movement history, and last-known location
-
 Downloadable PDF profiles for offline use
 
 🗂️ System Architecture
 Data Structures & Algorithms
 Dijkstra’s Algorithm for shortest path calculation
-
 Priority Queue for efficient node processing
-
 ArrayList for storing and sorting alerts
-
 Abstract Table Model for UI-data binding
-
 Database Design (MySQL)
 Elephants: id, name, status, zone, lat, lng
-
 Alerts: alert_id, elephant_id, risk_level, timestamp, status
-
 Zones: zone_name, risk_value
-
 Routes: from_node, to_node, distance
-
 Tech Stack
 Backend: Java, Servlets, MySQL
-
 Frontend: JSP, HTML/CSS, JavaScript, Google Maps API
-
 Libraries: Apache PDFBox, Collections Framework
 
 📁 Project Structure
@@ -66,12 +48,11 @@ src/
 ├── view/            # JSP pages and UI components
 ├── util/            # Helpers (e.g., PDF export, Dijkstra algo)
 └── resources/       # SQL scripts, config files
+
 🚀 Getting Started
 Prerequisites
 Java 8+
-
 MySQL 5.7+
-
 Apache Tomcat 9+
 
 Installation
@@ -82,9 +63,7 @@ git clone https://github.com/dildev-corder/
 Elephant-Alert-System.git
 
 Import the SQL script from resources/database.sql into MySQL.
-
 Update src/resources/db.properties with your database credentials.
-
 Deploy the WAR file to Tomcat and start the server.
 
 📸 Screenshots
@@ -93,11 +72,8 @@ Deploy the WAR file to Tomcat and start the server.
 
 📈 Future Enhancements
 🛰️ IoT Collars for real-time GPS tracking
-
 🤖 Machine Learning for predictive risk modeling
-
 🚁 Drone Monitoring Integration
-
 📩 SMS Alerts for high-risk zones
 
 👨‍💻 Developed By
